@@ -1,0 +1,53 @@
+:root {
+  --light-bg: #f5f7fa;
+  --light-text: #212529;
+  --dark-bg: #1a1a1a;
+  --dark-text: #e0e0e0;
+  --gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+body {
+  transition: background 0.5s ease, color 0.5s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.light-mode {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.hero {
+  background: var(--gradient);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
